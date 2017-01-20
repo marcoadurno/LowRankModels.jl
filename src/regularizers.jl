@@ -139,7 +139,7 @@ scale!(r::NonNegOneReg, newscale::Number) = 1
 
 ## Quadratic regularization restricted to nonnegative domain
 ## (Enforces nonnegativity alongside quadratic regularization)
-type NonNegQuadReg
+type NonNegQuadReg<:Regularizer
     scale::Float64
 end
 NonNegQuadReg() = NonNegQuadReg(1)
